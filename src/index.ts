@@ -8,7 +8,7 @@ const logger = new InMemoryLogAdapter();
 
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute
-  max: 1, 
+  max: 100, 
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "Too many requests, please try again later." },
